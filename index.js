@@ -16,6 +16,8 @@ function appearOnCurrentScreen() {
 
     const currentOutputJoined = currentOutput.join('');
     console.log(currentOutputJoined);
+
+    currentScreen.innerHTML = currentOutputJoined;
 }
 
 function allClear() {
