@@ -27,8 +27,17 @@ function allClear() {
     currentOutput = [];   
 }
 
+function deleteInput() {
+    currentOutput.pop();
+    currentScreen.innerHTML = currentOutput.join('');
+}
+
+
+// buttons being pressed
+
 for (let number of numberButtons) {
     number.addEventListener('click', appearOnCurrentScreen)
 }
 
-allClearButton.addEventListener('click', allClear)
+allClearButton.addEventListener('click', allClear);
+deleteButton.addEventListener('click', deleteInput);
