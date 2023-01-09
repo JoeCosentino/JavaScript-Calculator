@@ -14,6 +14,39 @@ for (let button of buttons) {
       operand1 = '';
       operand2 = '';
       updateDisplay();
+    } else if (button.id === 'delete') {
+      input = input.substring(0, input.length - 1);
+      updateDisplay();
+    } else if (button.id === 'add' || button.id === 'subtract' || button.id === 'multiply' || button.id === 'divide') {
+      operator = button.id;
+      operand1 = input;
+      input = '';
+      updateDisplay();
+    } else if (button.id === 'equals') {
+      operand2 = input;
+      let result = '';
+      switch (operator) {
+        case 'add':
+          result = parseFloat(operand1) + parseFloat(operand2);
+          break;
+        case 'subtract':
+          result = parseFloat(operand1) - parseFloat(operand2);
+          break;
+        case 'multiply':
+          result = parseFloat(operand1) * parseFloat(operand2);
+          break;
+        case 'divide':
+          result = parseFloat(operand1) / parseFloat(operand2);
+          break;
+      }
+      input = result.toString();
+      operator = '';
+      operand1 = '';
+      operand2 = '';
+      updateDisplay();
+    } else {
+      input += button.textContent;
+      updateDisplay();
     } 
   });
 }
