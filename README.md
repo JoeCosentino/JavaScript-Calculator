@@ -5,28 +5,27 @@ This is a README file for the application JavaScript Calculator, powered by HTML
 ## Important Links
 
 * Main repository link: https://github.com/JoeCosentino/JavaScript-Calculator
+* Active Link:
 
 
 ## To Download
 
 * you can download these files to your local computer using either:
-    1. SSH: git@github.com:JoeCosentino/Penny-For-Your-Thoughts.git
-    2. HTTPS: https://github.com/JoeCosentino/Penny-For-Your-Thoughts.git
+    1. SSH: git@github.com:JoeCosentino/JavaScript-Calculator.git
+    2. HTTPS: https://github.com/JoeCosentino/JavaScript-Calculator.git
 
 ## Collaboraters
 
 * Giuseppe (Joe) Cosentino
     - main developer on project
-* Pizza Hunt, Module 18
-    - allowed for framework to be referenced and certain elements and code to be analysed.
-* W3Schools
-    - assisted in explaining certain HTML and CSS functions
-* AskBCS
-    - Provided much assistance and clarification during development of this application
+
+## Purpose
+
+* The purpose of this project was to continue to develop and hone my front-end devlopment skills regarding HTML, CSS, and JavaScript.
 
 ## Screenshot of Assignment
 
-![image](./assets/images/PFYT-SS.PNG)
+![image](./assets/images/SS.PNG)
 
 ## Licensing
 
